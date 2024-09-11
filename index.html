@@ -2,450 +2,987 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Mukini - Jamu Masa Kini Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukini - Jamu Masa Kini</title>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
+<body id="top">
 
-    
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Beranda</a>
-                        <a href="about.html" class="nav-item nav-link">Tentang</a>
-                        <a href="product.html" class="nav-item nav-link">Produk</a>
-                        <a href="store.html" class="nav-item nav-link">Toko</a>
-                        <a href="testimonial.html" class="nav-item nav-link">Testimoni</a>
-                        <a href="contact.html" class="nav-item nav-link">Kontak</a>
-                    </div>
-                    <div class="border-start ps-4 d-none d-lg-block">
-                        <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </nav>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Gratis Ongkir untuk Pembelian di atas Rp50.000</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Cari produk di sini..." class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
-    </div>
-    <!-- Navbar End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn">Selamat Datang di Website<strong class="text-dark"></strong></p>
-                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">Mukini - Jamu Masa Kini</h1>
-                                    <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Jelajahi</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn">Selamat Datang di Website<strong class="text-dark"></strong></p>
-                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">Kesehatan Alami, Kekuatan di Masa Kini</h1>
-                                    <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Jelajahi</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Sebelumnya</span>
+
+        <div class="header-actions">
+
+          <a href="login-register/page_login.html" class="header-action-link" aria-label="user">
+            <button class="header-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Selanjutnya</span>
-            </button>
+          </a>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
         </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="" class="navbar-link has-after">Beranda</a>
+            </li>
+
+            <li>
+              <a href="" class="navbar-link has-after">Produk</a>
+            </li>
+
+            <li>
+              <a href="" class="navbar-link has-after">Tentang</a>
+            </li>
+
+            <li>
+              <a href="" class="navbar-link has-after">Kontak</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
     </div>
-    <!-- Carousel End -->
+
+  </header>
 
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Beranda</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Toko</a>
+        </li>
+
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>Tentang</a>
+        </li>
+
+        <li>
+          <a href="#offer" class="navbar-link" data-nav-link>Hubungi</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-6 text-end">
-                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/image-about-1.jpg" alt="">
-                            <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s" src="img/image-about-4.jpg" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/image-about-3.jpg" alt="">
-                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/image-about-2.jpg" alt="">
-                        </div>
-                    </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                     Herbal Alami,<br>
+                    Jamu Masa Kini
+                  </h1>
+
+                  <p class="hero-text">
+                    Dapatkan manfaat kesehatan dengan Jamu Mukini, yang terbuat dari bahan-bahan herbal alami dan non-toksik.
+                  </p>
+
+                  <p class="price">Mulai dari Rp20.000</p>
+
+                  <a href="#" class="btn btn-primary">Lihat Produk</a>
+
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="section-title">
-                        <p class="fs-5 fw-medium fst-italic text-primary">Tentang Kami</p>
-                        <h1 class="display-6">Sejarah kesuksesan Mukini dalam 25 tahun</h1>
-                    </div>
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-4">
-                            <img class="img-fluid bg-white w-100" src="img/image-about-5.jpg" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <h5>Jamu kami adalah salah satu minuman paling populer di Indonesia</h5>
-                            <p class="mb-0">Jamu kami merupakan salah satu minuman paling populer di Indonesia, yang telah menjadi bagian integral dari budaya kesehatan tradisional Nusantara.</p>
-                        </div>
-                    </div>
-                    <div class="border-top mb-4"></div>
-                    <div class="row g-3">
-                        <div class="col-sm-8">
-                            <h5>Konsumsi jamu dapat memberikan kesehatan untuk badan Anda</h5>
-                            <p class="mb-0">Konsumsi jamu secara rutin dapat memberikan banyak manfaat kesehatan bagi tubuh Anda.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <img class="img-fluid bg-white w-100" src="img/image-about-6.jpg" alt="">
-                        </div>
-                    </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Jamu Mukini: <br>
+                    Alami dan Sehat
+                  </h1>
+
+                  <p class="hero-text">
+                    Terbuat dari bahan alami, produk kami menawarkan kebaikan yang aman dan terpercaya untuk gaya hidup sehat Anda.
+                  </p>
+
+                  <p class="price">Mulai dari Rp20.000</p>
+
+                  <a href="#" class="btn btn-primary">Lihat Produk</a>
+
                 </div>
-            </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Jamu Mukini: <br>
+                    Pilihan Herbal Terbaik
+                  </h1>
+
+                  <p class="hero-text">
+                    Pilihan herbal terbaik dengan Jamu Mukini. Memberikan manfaat kesehatan yang optimal dan aman bagi tubuh Anda.
+                  </p>
+
+                  <p class="price">Mulai dari Rp20.000</p>
+
+                  <a href="#" class="btn btn-primary">Lihat Produk</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-    </div>
-    <!-- About End -->
+      </section>
 
 
-    <!-- Products Start -->
-    <div class="container-fluid product py-5 my-5">
-        <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-primary">Produk Kita</p>
-                <h1 class="display-6">Jamu memiliki efek positif yang kompleks pada tubuh</h1>
-            </div>
-            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-1.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Jamu Kunyit</h4>
-                        <span class="text-body">Mendetoksifikasi tubuh & menjaga kesehatan kulit</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-2.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Jamu Pahitan</h4>
-                        <span class="text-body">Membersihkan darah & mengatasi masalah kulit</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-3.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Jamu Beras Kencur</h4>
-                        <span class="text-body">Meningkatkan energi & meredakan pegal-pegal badan</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-4.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Jamu Luntas</h4>
-                        <span class="text-body">Membantu mengurangi bau badan & mendukung pencernaan</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Products End -->
 
 
-    <!-- Store Start -->
-    <div class="container-xxl py-5">
+      
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
         <div class="container">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-primary">Toko Online</p>
-                <h1 class="display-6">Ingin selalu sehat? Ayo beli produk kami</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-1.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Jamu Kunyit</h4>
-                            <p>Mendetoksifikasi tubuh dan membantu menjaga kesehatan kulitt</p>
-                            <h4 class="text-primary">Rp43.000</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Selengkapnya <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Tambah Keranjang <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-2.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Jamu Luntas</h4>
-                            <p>Membantu mengurangi bau badan dan mendukung kesehatan pencernaan</p>
-                            <h4 class="text-primary">Rp35.000</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Selengkapnya <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Masukkan keranjang <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-3.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Jamu Beras Kencur</h4>
-                            <p>Meningkatkan energi dan meredakan pegal-pegal pada badan</p>
-                            <h4 class="text-primary">Rp28.000</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Selengkapnya <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Masukkan keranjang <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="" class="btn btn-primary rounded-pill py-3 px-5">Lihat produk</a>
-                </div>
-            </div>
+
+          <h2 class="h2-large section-title">Kenapa harus Belanja di Mukini?</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Jaminan ALAMI</h3>
+
+                <p class="card-text">
+                  Seluruh produk Mukini mengikuti standar ketat akan kemurnian dan tidak mengandung bahan berbahaya.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">100% Ramah Lingkungan</h3>
+
+                <p class="card-text">
+                  Produk Mukini dibuat dengan cara yang bertanggung jawab tanpa merusak lingkungan.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Sumber Bahan Terpercaya</h3>
+
+                <p class="card-text">
+                  Kami menggunakan bahan-bahan herbal berkualitas tinggi yang bermanfaat optimal bagi kesehatan Anda.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-    </div>
-    <!-- Store End -->
+      </section>
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5 my-5">
-        <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-white">Testimoni</p>
-                <h1 class="display-6">Apa yang pelanggan kami katakan tentang Mukini</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">"Sejak rutin minum jamu kunyit, saya merasa tubuh lebih segar dan kulit lebih cerah. Rasanya juga enak, dan sekarang jamu menjadi bagian dari rutinitas kesehatan saya setiap hari!"</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Sarah Wijaya</h5>
-                            <span class="text-primary">28 Tahun</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">"Jamu beras kencur adalah favorit saya! Selain rasanya yang menyegarkan, saya merasakan peningkatan energi dan tidak mudah lelah setelah meminumnya. Sangat membantu di tengah kesibukan sehari-hari."</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Jason Emmanuel</h5>
-                            <span class="text-primary">35 Tahun</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">"Awalnya, saya ragu mencoba jamu pahitan karena rasanya yang kuat, tapi hasilnya luar biasa. Jamu ini membantu membersihkan kulit saya dari jerawat, dan saya merasa tubuh lebih sehat secara keseluruhan."</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Rina Rose</h5>
-                            <span class="text-primary">25 Tahun</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
 
+      <!-- 
+        - #COLLECTION
+      -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl contact py-5">
+      <section class="section collection" id="collection" aria-label="collection" data-section>
         <div class="container">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-primary">Hubungi Kami</p>
-                <h1 class="display-6">Hubungi kami sekarang juga</h1>
-            </div>
-            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-8">
-                    <p class="text-center mb-5">Jika Anda memiliki pertanyaan, ingin mengetahui lebih lanjut tentang produk kami, atau membutuhkan bantuan, jangan ragu untuk menghubungi kami. Tim kami selalu siap membantu Anda dengan cepat dan ramah. Anda dapat menghubungi kami melalui telepon, email, atau mengisi formulir kontak di situs web kami</p>
-                    <div class="row g-5">
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa fa-envelope fa-2x text-white"></i>
-                            </div>
-                            <p class="mb-2">info@example.com</p>
-                            <p class="mb-0">support@example.com</p>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa fa-phone fa-2x text-white"></i>
-                            </div>
-                            <p class="mb-2">+012 345 67890</p>
-                            <p class="mb-0">+012 345 67890</p>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa fa-map-marker-alt fa-2x text-white"></i>
-                            </div>
-                            <p class="mb-2">123 Street</p>
-                            <p class="mb-0">New York, USA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Koleksi Mukini</h2>
+
+                <p class="card-text">Mulai dari Rp20.000</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Belanja Sekarang</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Apa yang Baru?</h2>
+
+                <p class="card-text">Rasakan manfaat alami</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Temukan Sekarang</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Gratis Ongkir</h2>
+
+                <p class="card-text">Pembelian di atas Rp50.000</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Temukan Sekarang</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-    </div>
-    <!-- Contact Start -->
+      </section>
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Kantor Kami</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>mukinistore@gmail.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Tautan Cepat</h4>
-                    <a class="btn btn-link" href="">Tentang Kami</a>
-                    <a class="btn btn-link" href="">Hubungi Kami</a>
-                    <a class="btn btn-link" href="">Pelayanan Kami</a>
-                    <a class="btn btn-link" href="">Kebijakan & Privasi</a>
-                    <a class="btn btn-link" href="">Pendukung</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Jam Kerja</h4>
-                    <p class="mb-1">Senin - Jum'at</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Sabtu</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Minggu</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Buletin</h4>
-                    <p>Salam Sehat dari Jamu Mukini!</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
 
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
+
+      <!-- 
+        - #SHOP
+      -->
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium" href="#">Website Mukini - Jamu Masa Kini</a>, Hak Dilindungi Undang-undang.
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Produk Terlaris</h2>
+
+            <a href="#" class="btn-link">
+              <span class="span">Belanja Semua Produk</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>                    
+
+                  </div>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium">Ayu Nilam Sari</a>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">Rp40.000</del>
+
+                    <span class="span">Rp38.000</span>
+                  </div>
+
+                  <h3>
+                    <a class="card-title">Kunyit Asam</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 ulasan</p>
+
+                  </div>
+
                 </div>
-            </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>                    
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rp25.000</span>
+                  </div>
+
+                  <h3>
+                    <a class="card-title">Teh Rosella</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 ulasan</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>                    
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rp25.000</span>
+                  </div>
+
+                  <h3>
+                    <a class="card-title">Teh Rosella</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 ulasan</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>                    
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">37.000</span>
+                  </div>
+
+                  <h3>
+                    <a class="card-title">Beras Kencur</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>                    
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">56.000</del>
+
+                    <span class="span">44.800</span>
+                  </div>
+
+                  <h3>
+                    <a class="card-title">Galian Singset</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 ulasan</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>                    
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rp38.000</span>
+                  </div>
+
+                  <h3>
+                    <a class="card-title">Jamu Luntas</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 ulasan</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
+      </section>
+
+
+
+                 <!-- 
+        - #BANNER
+      -->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">Koleksi Terbaru</p>
+
+                <h2 class="h2 card-title">Temukan Kebaikan Alami Jamu Mukini</h2>
+
+                <a href="#" class="btn btn-secondary">Jelajahi Sekarang</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title">Diskon 25% untuk Semua Produk</h2>
+
+                <p class="card-text">
+                  Jamu herbal untuk kesehatan dan kebugaran semua orang.
+                </p>
+
+                <a href="#" class="btn btn-secondary">Belanja Diskon</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #OFFER
+      -->
+
+      <section class="section offer" id="offer" aria-label="offer" data-section>
+        <div class="container">
+
+          <figure class="offer-banner">
+            <img src="./assets/images/offer-banner-1.jpg" width="305" height="408" loading="lazy" alt="offer products"
+              class="w-100">
+
+            <img src="./assets/images/offer-banner-2.jpg" width="450" height="625" loading="lazy" alt="offer products"
+              class="w-100">
+          </figure>
+
+          <div class="offer-content">
+
+            <p class="offer-subtitle">
+              <span class="span">Penawaran Spesial</span>
+
+              <span class="badge" aria-label="20% off">-20%</span>
+            </p>
+
+            <h2 class="h2-large section-title">Jamu Kunyit Asam</h2>
+
+            <p class="section-text">
+              Dibuat dengan bahan alami dan non-toksik, produk kami cocok untuk semua orang.
+            </p>
+
+            <div class="countdown">
+
+              <span class="time" aria-label="days">15</span>
+              <span class="time" aria-label="hours">21</span>
+              <span class="time" aria-label="minutes">46</span>
+              <span class="time" aria-label="seconds">08</span>
+
+            </div>
+
+            <a href="#" class="btn btn-primary">Hanya Rp38.500</a>
+
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Perusahaan</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Temukan lokasi terdekat Anda <a href="#" class="link">Toko Kami</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+62 (0)21 1234 5678</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@mukini.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Tautan Berguna</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Produk Baru</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Produk Terlaris</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Paket Hemat</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Kartu Hadiah Online</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Informasi</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mulai Pengembalian</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Hubungi Kami</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ Pengiriman</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Syarat & Ketentuan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Kebijakan Privasi</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Email Bermanfaat</p>
+
+          <p class="newsletter-text">
+            Masukkan email Anda di bawah ini untuk menjadi yang pertama tahu tentang koleksi dan peluncuran produk terbaru.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Masukkan alamat email anda" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Berlangganan</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 Mukini
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
     </div>
-    <!-- Copyright End -->
+  </footer>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
